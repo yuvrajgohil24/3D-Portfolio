@@ -35,8 +35,13 @@ const About = () => {
       <h2 className={styles.sectionHeadText}>Overview.</h2>
     </motion.div>
 
-    <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-      I'm a skilled software developer with good experience in {<b>MERN</b>} TechStack and in some Javascript frameworks like {<b>ReactJS, NodeJS, ExpressJS and ThreeJS</b>}, I have a decent knowledge of Data Structures and Algorithms too. I am a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to implement your ideas in real life. And currently I am started working on {<b>React-Native</b>} for learning {<b>Mobile Application Development</b>}.
+    <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-6xl leading-[32px]'>
+      - I'm a skilled software developer with good experience of almost 2.5 years in {<b>ReactJS</b>}  <br />  <br />
+      - I've worked on various Frontend technologies like {<b>HTML5, CSS3, BootStrap, Tailwind, JavaScript, ReactJS </b>} and Backend technologies like {<b>NodeJS, ExpressJS, MongoDB</b>} and now I am using some 3D animations libraries like {<b>ThreeJS, Framer-Motion</b>}. <br /><br />
+
+      - I am a 5-star coder in C++ at {<b>HackerRank</b>} ⭐. And I have good knowledge of {<b>Data Structures and Algorithms.</b>} <br /> <br />
+      
+      - Additionally, my skills extend to {<b>Mobile App Development</b>}, where I use the versatility of {<b>React Native</b>} to create cross-platform applications.
     </motion.p>
 
     <div className='mt-20 flex flex-wrap gap-10'>
