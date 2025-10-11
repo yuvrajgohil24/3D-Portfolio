@@ -6,8 +6,9 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
-const ProjectCard = ({ index, name, description, tags, source_code_link, image }) => {
+const ProjectCard = ({ index, name, description, tags, source_code_link, image, live_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt options={{
@@ -28,7 +29,10 @@ const ProjectCard = ({ index, name, description, tags, source_code_link, image }
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <div className="flex gap-3 items-center">
+            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <Link to={live_link} className="text-blue-300 hover:underline text-lg" >[ Live Link ]</Link>
+          </div>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
